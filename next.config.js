@@ -5,6 +5,6 @@ module.exports = nextConfig;
 
 module.exports = {
   env: {
-    OPENAI_API_KEY: "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",
+    OPENAI_API_KEY: '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',
   },
 };
