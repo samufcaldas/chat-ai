@@ -2,6 +2,10 @@
 
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import { Button } from "./ui/button";
+
+import { Input } from "./ui/input";
+import { useChat } from "ai/react";
+import { ScrollArea } from "./ui/scroll-area";
 import {
   Card,
   CardHeader,
@@ -10,9 +14,6 @@ import {
   CardContent,
   CardFooter,
 } from "./ui/card";
-import { Input } from "./ui/input";
-import { useChat } from "ai/react";
-import { ScrollArea } from "./ui/scroll-area";
 
 export interface ChatProps {}
 
@@ -30,7 +31,7 @@ export function Chat() {
         </CardDescription>
       </CardHeader>
       <CardContent>
-        <ScrollArea className="h-[640px] space-y-4">
+        <ScrollArea className="h-full space-y-4">
           {messages.map((message) => {
             return (
               <div
